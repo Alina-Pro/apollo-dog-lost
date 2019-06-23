@@ -1,0 +1,158 @@
+.ApolloForm {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+  max-height: 70%;
+  top: 150px;
+  right: 430px;
+  opacity: 0.9;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fdfdfd;
+  font-size: 270%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-align: left;
+  top: 40%;
+  right: 25%;
+}
+
+legend,
+p,
+.ant-radio-wrapper {
+  color: #fdfdfd;
+  font-size: 18px;
+}
+
+.ApolloForm .navigation {
+  display: inline-block;
+  width: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+.ApolloForm .content {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.ApolloForm .content fieldset legend {
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 250;
+  margin-bottom: 20px;
+  font-size: 200%;
+}
+
+.ApolloForm:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navigation li {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.navigation li svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation li svg {
+  transition: all 200ms linear;
+}
+
+.navigation li:active svg,
+.navigation li:focus svg {
+  transform: scale(0.92);
+}
+
+.navigation li.unavaible {
+  pointer-events: none;
+}
+
+.navigation li.unavaible svg {
+  transform: scale(0.6) translate3d(0, -10px, 0);
+}
+
+.navigation li .tail {
+  position: absolute;
+  top: 100%;
+  margin-top: -9px;
+  left: 23px;
+  height: 20px;
+  width: 2px;
+}
+
+.navigation li:last-child .tail {
+  display: none;
+}
+.navigation li b {
+  opacity: 0;
+}
+
+.navigation li:hover b {
+  opacity: 1;
+  transform: translateX(1000px);
+}
+
+.navigation li b {
+  transition: opacity 200ms linear;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  left: -1000px;
+  margin-left: 55px;
+  background: #6dc5ab;
+  color: rgb(32, 31, 31);
+  font-size: 16px;
+  padding: 5px 10px 2px 10px;
+  border-radius: 3px;
+  min-height: 20px;
+}
+
+.navigation li b .t {
+  right: 100%;
+  top: 50%;
+  content: " ";
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(109, 197, 171, 0);
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-right-color: #6dc5ab;
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.block-hide {
+  display: none;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
